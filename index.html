@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/da6e7929f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+    <title>Satelliitti ISS</title>
+</head>
+<body>
+    <div class="logo">
+        <i class="fas fa-satellite-dish"></i>
+        <i class="fas fa-satellite" id="logo2"></i>
+    </div>
+
+    <div class="nav">
+        <a href="https://fi.wikipedia.org/wiki/Kansainv%C3%A4linen_avaruusasema" target="_blank">Wikipedia</a>
+        <a href="https://www.nasa.gov/mission_pages/station/main/index.html" target="_blank">NASA</a>
+        <a href="https://www.ursa.fi/avaruustekniikka/avaruustekniikka/avaruusasemat/iss.html" target="_blank">URSA</a>
+    </div>
+
+    <div class="header">
+        <h1>ISS satelliitti</h1>
+        <h3>Kansainvälinen avaruusasema eli ISS (engl. International Space Station) on Maata kiertävä pysyvästi miehitetty avaruusasema. Asema on jatkoa Yhdysvaltain Skylab- ja Neuvostoliiton Mir- ja Saljut-avaruusasemille. Avaruusasema on Kanadan, Euroopan, Japanin, Venäjän ja Yhdysvaltojen avaruushallinnon yhteishanke. <span id="lahde">Wikipedia, 2022</span></h3>
+    </div>
+
+    <div class="image"></div>
+
+    <div id="tietoa">
+        <p>
+            <h4>Sijainti</h4>
+            Leveysaste: <span id="leveysaste"></span><br>
+            Pituusaste: <span id="pituusaste"></span>
+        </p>
+    </div>
+
+    <div id="lisatietoa">
+        <p>
+            <h4>Lisätietoja</h4>
+            Nopeus: <span id="nopeus"></span><br>
+            Korkeus: <span id="korkeus"></span><br>
+            Näkyvyys:  <span id="nakyvyys"></span>
+        </p>
+    </div>
+
+    <button onclick="lisatietoja(), tiedot()"><span id="nappiText"></span></button>
+
+    <div class="footer">
+        <p>©: Siiri Poropudas</p>
+    </div>
+</body>
+</html>
